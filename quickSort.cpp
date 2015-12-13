@@ -16,7 +16,8 @@ void quickSort(int arr[], int left, int right)
         while(arr[j] > pivot)
             j--;
 
-        while(i < j)
+        //while(i < j)
+        if(i < j)
         {
             int tmp = arr[i];
             arr[i] = arr[j];
